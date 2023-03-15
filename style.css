@@ -1,0 +1,66 @@
+body{
+    background-image:url("img/blur.jpg");
+    margin:0;
+}
+#overlay{
+    width:100%;
+    height:100%;
+    position:fixed;
+}
+form{
+    max-width:550px;
+    width:90%;
+    background: white;
+    margin:15px auto;
+    padding:30px;
+    border-radius:3px;
+    box-sizing:border-box;
+}
+h1{
+    margin:0;
+    text-align: center;
+}
+
+label{
+    display:block;
+    margin:15px 0;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+input:focus,textarea:focus{
+    border-bottom:1px solid rgb(240, 121, 121);
+}
+textarea::-webkit-scrollbar{
+    width:4px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color:rgb(240, 121, 121);
+}
+.center{
+    text-align:center;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    width:90%;
+    background-color: grey;
+    max-width: 200px;
+    font-weight: bold;
+    font-size: 15px;
+}
+input[type="submit"]:hover{
+    background: green;
+}
+.error{
+    color:red;
+}
+#Success{
+    color: green;
+}
+

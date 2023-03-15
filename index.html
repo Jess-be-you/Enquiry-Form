@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Enquiry form</title>
+</head>
+<body>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault();validateForm()">
+            <h1>Contact Us</h1>
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Your email">
+            <small class="error"></small>
+
+            <label>Phone</label>
+            <input type="number" id="phone" placeholder="Your mobile number(optional)">
+            
+            <label>Message</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="SEND">
+                <p id="Success"></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
